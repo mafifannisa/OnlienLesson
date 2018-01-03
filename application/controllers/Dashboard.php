@@ -6,8 +6,12 @@ if (!defined('BASEPATH'))
 class Dashboard extends CI_Controller {
 
     public function index() {
-		    $this->template->display('dashboard');
-
+      $a=$this->session->userdata('nama');
+  		if($a<>null){
+  		    $this->template->display('dashboard');
+  		}else{
+  			  $this->load->view('login');
+  		}
     }
 
     function logout() {

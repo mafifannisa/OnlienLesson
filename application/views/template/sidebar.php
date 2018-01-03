@@ -4,10 +4,10 @@
     <!-- Sidebar user panel -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="<?php echo base_url('assets/img/me160x160.jpg')?>" class="img-circle" alt="User Image">
+        <img src="<?php echo $this->session->userdata('gambar'); ?>" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
-        <p>Moch. Afif</p>
+        <p><?php echo $this->session->userdata('nama'); ?></p>
         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
       </div>
     </div>

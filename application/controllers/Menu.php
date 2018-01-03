@@ -6,13 +6,13 @@ class Menu extends CI_Controller{
     }
 
     function index() {
-		//$a=$this->session->userdata('nama');
-		//if($a<>null){
-		$data['record']=  $this->db->get('tb_menu')->result();
-    $this->template->display('menu/view',$data);
-		//}else{
-			// $this->load->view('login');
-		//}
+		$a=$this->session->userdata('nama');
+		if($a<>null){
+		    $data['record']=  $this->db->get('tb_menu')->result();
+        $this->template->display('menu/view',$data);
+		}else{
+			  $this->load->view('login');
+		}
 
     }
 

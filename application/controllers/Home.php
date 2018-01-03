@@ -6,6 +6,7 @@ if (!defined('BASEPATH'))
 class Home extends CI_Controller {
 
     public function index() {
+            
 		    $this->shop->nampil('home');
 
     }

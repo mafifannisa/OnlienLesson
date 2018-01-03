@@ -1,32 +1,66 @@
 <div class="content-wrapper">
   <div class="container">
-  
+
 
     <!-- Main content -->
     <section class="content">
       <div class="callout callout-info">
-        <h4>Tip!</h4>
+        <h4>Selamat Tahun Baru</h4>
 
-        <p>Add the layout-top-nav class to the body tag to get this layout. This feature can also be used with a
-          sidebar! So use this class if you want to remove the custom dropdown menus from the navbar and use regular
-          links instead.</p>
+        <p>Selamat Tahun Baru 2018, Semoga tetap sehat dan bisa menggapai cita-cita ditahun ini. Dengan Privat di lembaga kesukaan-mu dan terpercaya</p>
       </div>
       <div class="callout callout-danger">
         <h4>Warning!</h4>
 
-        <p>The construction of this layout differs from the normal one. In other words, the HTML markup of the navbar
-          and the content will slightly differ than that of the normal layout.</p>
+        <p>Website masih dalam maitance</p>
       </div>
       <div class="box box-default">
         <div class="box-header with-border">
-          <h3 class="box-title">Blank Box</h3>
+          <h3 class="box-title">Keluhan</h3>
         </div>
         <div class="box-body">
-          The great content goes here
+          Kritik dan Saran, kirimkan di subayustudio@gmail.com
         </div>
         <!-- /.box-body -->
       </div>
       <!-- /.box -->
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box box-solid">
+            <div class="box-header with-border">
+              <h4 class="box-title">Kategori</h4>
+            </div>
+            <div class="box-body">
+              <!-- the events -->
+              <div id="external-events">
+                <div class="external-event bg-green">Lunch</div>
+                <div class="external-event bg-yellow">Go home</div>
+                <div class="external-event bg-aqua">Do homework</div>
+                <div class="external-event bg-light-blue">Work on UI design</div>
+                <div class="external-event bg-red">Sleep tight</div>
+
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /. box -->
+          
+        </div>
+        <!-- /.col -->
+        <div class="col-md-9">
+          <div class="box box-primary">
+            <div class="box-body no-padding">
+              <!-- THE CALENDAR -->
+              <div id="calendar"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /. box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
     </section>
     <!-- /.content -->
   </div>

@@ -53,14 +53,24 @@
 
   <div class="register-box-body">
     <p class="login-box-msg">Masuk sebagai Pengguna</p>
-
+    <?php
+    echo form_open('login/proses');
+    if (validation_errors() || $this->session->flashdata('result_login')) {
+        ?>
+        <div class="alert alert-danger alert-dismissable">
+            <button type="button" aria-hidden="true" data-dismiss="alert" class="close">&times;</button>
+            <strong>Warning!</strong>
+            <?php echo validation_errors(); ?>
+            <?php echo $this->session->flashdata('result_login'); ?>
+        </div>
+    <?php } ?>
     <form action="../../index.html" method="post">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" class="form-control" name="username" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" class="form-control" name="password" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
